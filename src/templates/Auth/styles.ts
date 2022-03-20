@@ -3,13 +3,15 @@ import styled, { css } from 'styled-components'
 export const Wrapper = styled.main`
   ${({ theme }) => css`
     background: ${theme.colors.xxwhite};
+    height: 100%;
   `}
 `
 
 export const ImageBlock = styled.header`
   ${({ theme }) => css`
     width: 100%;
-    height: 37rem;
+    height: 353px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,29 +23,18 @@ export const ImageBlock = styled.header`
   `}
 `
 
-export const Title = styled.h1`
-  ${({ theme }) => css`
-    font-height: ${theme.fonts.weight.medium};
-    color: ${theme.colors.black};
-
-    font-size: 2.7rem;
-    margin-bottom: ${theme.spacings.large};
-
-    & span {
-      color: ${theme.colors.white};
-    }
-  `}
-`
-
 export const Content = styled.div`
   ${({ theme }) => css`
     width: 100%;
-    max-width: 366px;
+    max-width: 380px;
+    padding: 0 ${theme.spacings.large} ${theme.spacings.medium};
 
     margin: ${theme.spacings.xlarge} auto 0;
   `}
 `
 
 export const Image = styled.object`
-  width: 95%;
+  position: absolute;
+  top: 90px;
+  width: 390px;
 `
