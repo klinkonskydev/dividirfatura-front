@@ -21,22 +21,6 @@ export const Heading = styled.h2`
   `}
 `
 
-export const LinkWrapper = styled.div`
-  ${({ theme }) => css`
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-
-    margin-bottom: ${theme.spacings.medium};
-
-    & a {
-      font-size: 1.4rem;
-      font-weight: ${theme.fonts.weight.small};
-      color: ${theme.colors.xblack};
-      text-decoration: none;
-    }
-  `}
-`
 export const SignUpWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;

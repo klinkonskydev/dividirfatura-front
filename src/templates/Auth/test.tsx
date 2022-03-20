@@ -4,16 +4,6 @@ import renderWithTheme from 'utils/renderWithTheme'
 import AuthTemplate from '.'
 
 describe('</Textbox>', () => {
-  it('should render the heading', () => {
-    renderWithTheme(
-      <AuthTemplate>
-        <div data-testid="children" />
-      </AuthTemplate>
-    )
-
-    expect(screen.getByRole('heading', { name: /dividirfatura/i }))
-  })
-
   it('should render the object with image', () => {
     renderWithTheme(
       <AuthTemplate>

@@ -1,10 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
-  ${({ theme }) => css`
-    background: ${theme.colors.xxwhite};
-    height: 100%;
-  `}
+  height: 100%;
 `
 
 export const ImageBlock = styled.header`
