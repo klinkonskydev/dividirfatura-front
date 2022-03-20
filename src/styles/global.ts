@@ -6,20 +6,21 @@ const GlobalStyles = createGlobalStyle`
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: ${theme.fonts.family};
     }
 
     html {
       font-size: 62.5%;
+      background: ${theme.colors.xxwhite};
     }
 
     html,
     body,
     #__next {
-      height: 100%;
+      min-height: 100%;
     }
 
     body {
-      font-family: ${theme.fonts.family};
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
