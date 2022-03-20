@@ -37,24 +37,6 @@ export const LinkWrapper = styled.div`
     }
   `}
 `
-
-export const Button = styled.button`
-  ${({ theme }) => css`
-    width: 100%;
-    padding: calc(${theme.spacings.medium} - 0.2rem) 0;
-    background: ${theme.colors.yellow};
-    border-radius: 8px;
-
-    font-size: 1.4rem;
-    font-weight: ${theme.fonts.weight.medium};
-
-    margin-bottom: ${theme.spacings.medium};
-
-    border: 0;
-    outline: 0;
-  `}
-`
-
 export const SignUpWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;

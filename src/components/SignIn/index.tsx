@@ -1,3 +1,4 @@
+import { Button } from 'components/Button/styles'
 import Textbox from 'components/Textbox'
 import Link from 'next/link'
 import * as S from './styles'
@@ -13,7 +14,7 @@ const SignIn = () => (
       <Link href="/">Esqueceu sua senha?</Link>
     </S.LinkWrapper>
 
-    <S.Button>Entrar</S.Button>
+    <Button>Entrar</Button>
 
     <S.SignUpWrapper>
       <span>Não tem uma conta?</span>
