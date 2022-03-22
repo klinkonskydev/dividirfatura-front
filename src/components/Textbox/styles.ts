@@ -26,5 +26,10 @@ export const Input = styled.input`
     &:focus {
       box-shadow: 2px 2px 5px 1px ${theme.colors.xwhite};
     }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 2px 2px 5px 1px ${theme.colors.xwhite} inset;
+      filter: none;
+    }
   `}
 `
