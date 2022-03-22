@@ -15,7 +15,7 @@ export const ImageBlock = styled.header`
 
     overflow: hidden;
 
-    padding-top: ${theme.spacings.medium};
+    padding-top: ${theme.spacings.large};
     background: ${theme.colors.yellow};
   `}
 `
