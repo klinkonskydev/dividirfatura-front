@@ -6,6 +6,9 @@ export default {
   component: Textbox,
   args: {
     placeholder: 'Seu email'
+  },
+  argTypes: {
+    onInputChange: { action: 'changed' }
   }
 } as Meta
 

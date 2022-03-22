@@ -1,8 +1,26 @@
-import { InputHTMLAttributes } from 'react'
+import { InputHTMLAttributes, useState } from 'react'
 import * as S from './styles'
 
-export type TextboxProps = InputHTMLAttributes<HTMLInputElement>
+export type TextboxProps = {
+  onInputChange?: (value: string) => void
+  initialValue?: string
+} & InputHTMLAttributes<HTMLInputElement>
 
-const Textbox = ({ ...rest }) => <S.Input {...rest} />
+const Textbox = ({
+  initialValue = '',
+  onInputChange,
+  ...rest
+}: TextboxProps) => {
+  const [value, setValue] = useState(initialValue)
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = event.currentTarget.value
+    setValue(newValue)
+
+    !!onInputChange && onInputChange(newValue)
+  }
+
+  return <S.Input {...rest} onChange={onChange} value={value} />
+}
 
 export default Textbox

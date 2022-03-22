@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Logo from 'components/Logo'
 import * as S from './styles'
 
 type AuthTemplateProps = {
@@ -9,7 +9,7 @@ export default function AuthTemplate({ children }: AuthTemplateProps) {
   return (
     <S.Wrapper>
       <S.ImageBlock>
-        <Image src="/img/logo.svg" width="156px" height="20px" />
+        <Logo />
         <S.Image type="image/svg+xml" data="/img/invoices.svg">
           svg-animation
         </S.Image>
